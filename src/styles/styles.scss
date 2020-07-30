@@ -1,0 +1,24 @@
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+      // gatsby:     purple,
+    // "primary":    $primary,
+    // "secondary":  $secondary,
+    // "success":    green,
+    "gatsby-dark":  #542C85,
+    "gatsby":       #9963BA,
+    "gatsby-light": #C9ABDB,
+    "gray-dark":    #272c30,
+    "gray":         #c8c8c8,
+    // "info":       $info,
+    // "warning":    $warning,
+    // "danger":     $danger,
+    // "light":      $light,
+    // "dark":       $dark
+  ),
+  $theme-colors
+);
+
+// @import '~bootstrap/scss/bootstrap.scss';
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
