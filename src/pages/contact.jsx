@@ -13,8 +13,8 @@ const Contact = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-12 py-4">
-                        <h1>Contact</h1>
-                        <p>{text}</p>
+                        <h1 className="text-center">Contact</h1>
+                        <p className="text-center">{text}</p>
                     </div>
                     <div className="col-md-6 mb-5">
                         <form>
@@ -27,9 +27,9 @@ const Contact = () => {
                                 {/* <label htmlFor="exampleInputEmail">Email:</label> */}
                                 <input type="email" className="form-control" id="exampleInputEmail" placeholder="E-mail" />
                             </div>
-                            <div class="form-group">
+                            <div className="form-group">
                                 {/* <label htmlFor="exampleFormControlTextarea1">Textarea:</label> */}
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="TextArea"></textarea>
+                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="TextArea"></textarea>
                             </div>
                             <button type="submit" className="btn btn-success">Send</button>
                         </form>

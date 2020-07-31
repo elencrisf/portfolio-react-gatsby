@@ -8,15 +8,12 @@
     color: green;
 }
 
-// .image {
-//     :hover {
-//         background-color: (rgba(119, 119, 119, 0.5));
-//     }
-// }
-.container {
+
+.cardContainer {
     position: relative;
     width: 100%;
 }
+
 .image {
     display: block;
     width: 100%;
@@ -33,11 +30,11 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: #862e7f;
   }
   
-  .container:hover .overlay {
-    opacity: 1;
+  .cardContainer:hover .overlay {
+    opacity: 0.9;
   }
   
   .text {

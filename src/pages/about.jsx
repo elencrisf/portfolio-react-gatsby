@@ -11,17 +11,17 @@ const About = () => {
         <>
         <Layout>
             <SEO title="About" />
-            <div className="container">
+            <div className="container-fluid px-5">
                 <div className="row">
                     <div className="col-12 py-4">
-                        <h1>About</h1>
-                        <p>{text}</p>
+                        <h1 className="text-center">About</h1>
+                        <p className="text-center">{text}</p>
                     </div>
                 </div>
             </div>
 
 
-            <div className="container">
+            <div className="container-fluid px-5">
                 <div className="row">
                     <div className="col-lg-4 mb-3">
                         <Card2

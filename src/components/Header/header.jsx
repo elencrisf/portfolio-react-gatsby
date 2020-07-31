@@ -42,7 +42,7 @@ const Header = () => {
               </li>
               <li className="nav-item">
               <Link to="/gallery/" activeStyle={{ color: "#9963BA" }} className="nav-link" activeClassName="active"
-            >Gallery</Link>
+            >Projects</Link>
               </li>
               <li className="nav-item">
               <Link to="/contact/" activeStyle={{ color: "#9963BA" }} className="nav-link" activeClassName="active"

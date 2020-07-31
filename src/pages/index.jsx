@@ -44,8 +44,8 @@ const IndexPage = () => (
     <div className="container">
       <div className="row">
         <div className="col-12 py-4">
-        <h1>Hi people</h1>
-        <p>Welcome to your new Gatsby site.</p>
+        <h1>I'm Elen Ferreira</h1>
+        <p>I'm a Web Designer.</p>
         </div>
       </div>
     </div>

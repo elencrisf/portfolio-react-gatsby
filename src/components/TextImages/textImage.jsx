@@ -1,49 +1,67 @@
 import React from 'react';
-import { useStaticQuery, graphql } from "gatsby";
+// import { useStaticQuery, graphql } from "gatsby";
 // import Img from "gatsby-image";
 
 
 const TextImage = (props) => {
 
-    useStaticQuery(graphql`
-    query {
-      Image01: file(relativePath: { eq: "Image01.jpg" }) {
-        name
-      }
-      Image02: file(relativePath: { eq: "Image02.jpg" }) {
-        name
-      }
-      Image03: file(relativePath: { eq: "Image03.jpg" }) {
-        name
-      }
-      Image04: file(relativePath: { eq: "Image04.jpg" }) {
-        name
-      }
-      Image05: file(relativePath: { eq: "Image05.jpg" }) {
-        name
-      }
-      Image06: file(relativePath: { eq: "Image06.jpg" }) {
-        name
-      }
-    }
-  `)
+  //   useStaticQuery(graphql`
+  //   query {
+  //     image01: file(relativePath: { eq: "Image01.jpg" }) {
+  //       name
+  //     }
+  //     image02: file(relativePath: { eq: "Image02.jpg" }) {
+  //       name
+  //     }
+  //     image03: file(relativePath: { eq: "Image03.jpg" }) {
+  //       name
+  //     }
+  //     image04: file(relativePath: { eq: "Image04.jpg" }) {
+  //       name
+  //     }
+  //     image05: file(relativePath: { eq: "Image05.jpg" }) {
+  //       name
+  //     }
+  //     image06: file(relativePath: { eq: "Image06.jpg" }) {
+  //       name
+  //     }
+  //   }
+  // `)
 
     return (
         <>
         {(() => {
             switch (props.name) {
-                case 'Image01':
-                  return <h1>Hello World 1</h1>
-                case 'Image02':
-                  return <h1>Hello World 2</h1>
-                case 'Image03':
-                  return <h1>Hello World 3</h1>
-                case 'Image04':
-                  return <h1>Hello World 4</h1> 
-                case 'Image05':
-                  return <h1>Hello World 5</h1> 
-                case 'Image06':
-                  return <h1>Hello World 6</h1> 
+                case 'image01':
+                  return <div>
+                    <h3>Hello Word 1</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                case 'image02':
+                  return <div>
+                    <h3>Hello Word 2</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                case 'image03':
+                  return <div>
+                    <h3>Hello Word 3</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                case 'image04':
+                  return <div>
+                    <h3>Hello Word 4</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                case 'image05':
+                  return <div>
+                    <h3>Hello Word 5</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
+                case 'image06':
+                  return <div>
+                    <h3>Hello Word 6</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  </div>
                 default:
                   return null;
             }
