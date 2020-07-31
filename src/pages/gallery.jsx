@@ -8,7 +8,7 @@ import TextImage from "../components/TextImages/textImage";
 
 const Gallery = (props) => {
 
-    const { gallery } = useStaticQuery(graphql`
+    const { gallery, textImg } = useStaticQuery(graphql`
         query {
             gallery: allFile(filter: {extension: {eq: "jpg"}, absolutePath: {regex: "/images/"}}) {
             nodes {
@@ -20,8 +20,16 @@ const Gallery = (props) => {
                 }
             }
             }
+            textImg:   allFile(filter: {extension: {eq: "jpg"}, absolutePath: {regex: "/images/"}}) {
+            nodes {
+                id
+                name
+            }
+            }
         }
     `)
+
+
     return (
         <Layout>
             <SEO title="Gallery" />
@@ -40,12 +48,12 @@ const Gallery = (props) => {
                                         <div className={cardStyles.text}>
                                             <div className="text">
                                                 {/* <TextImage name="image01" /> */}
-                                                {TextImage && TextImage.map((text =>
-                                                    <div key={text.index}>{text.props.name}</div>
-                                                ))}
-                                                    {/* {TextImage.map((text =>
-                                                        <div key={text.index}>{text.props.name}</div>
-                                                    ))} */}
+                                                <TextImage name=
+                                                {textImg.nodes.map((text =>
+                                                    <div key={text.id}>{text.name}</div>
+                                                    ))}
+                                                />
+
                                             </div>
                                         </div>
                                     </div>   
