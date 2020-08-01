@@ -13,6 +13,14 @@ setConfig({
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <div className="container">
+      <div className="row">
+        <div className="col-12 py-4">
+        <h1 className="text-center">I am Elen Ferreira</h1>
+        <p className="text-center">I'm a Web Designer.</p>
+        </div>
+      </div>
+    </div>
     <div className="container-fluid">
       <div className="row">
         <div className="col-12 px-0">
@@ -41,14 +49,7 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-    <div className="container">
-      <div className="row">
-        <div className="col-12 py-4">
-        <h1>I'm Elen Ferreira</h1>
-        <p>I'm a Web Designer.</p>
-        </div>
-      </div>
-    </div>
+
     {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div> */}

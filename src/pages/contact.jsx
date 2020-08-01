@@ -10,7 +10,7 @@ const Contact = () => {
         <>
         <Layout>
         <SEO title="Contact" />
-            <div className="container">
+            <div className="container pb-4">
                 <div className="row">
                     <div className="col-12 py-4">
                         <h1 className="text-center">Contact</h1>
@@ -47,9 +47,9 @@ const Contact = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="mt-4">
+                {/* <div className="mt-4">
                 <p>Follow me on <a href="https://twitter.com/gatsbyjs">Twitter</a>!</p>
-                </div>
+                </div> */}
             </div>
         </Layout>
         </>

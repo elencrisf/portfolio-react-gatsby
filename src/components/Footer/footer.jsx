@@ -1,6 +1,7 @@
 import React from 'react';
 import * as Styled from './styled';
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby";
+import "./footer.scss";
 
 const Footer = () => {
 
@@ -35,7 +36,8 @@ const Footer = () => {
   `)
 
     return (
-        <div className="bg-dark">
+      <footer className="footer">
+          <div className="bg-dark">
             <div className="container">
                 <div className="row text-white py-4 mt-5">
                     <div className="col-md-6 text-center mb-3">{description}</div>
@@ -60,6 +62,8 @@ const Footer = () => {
               </div>
             </div>
         </div>
+      </footer>
+
     );
 };
 

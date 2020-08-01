@@ -1,17 +1,20 @@
-.card {
-    p {
-        color: red;
-    }
-}
+// .card {
+//     p {
+//         color: red;
+//     }
+// }
 
-.h1 {
-    color: green;
-}
-
+// .h1 {
+//     color: green;
+// }
+// .card {
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+// }
 
 .cardContainer {
     position: relative;
     width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .image {
@@ -30,7 +33,7 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #862e7f;
+    background-color: #9963BA;
   }
   
   .cardContainer:hover .overlay {

@@ -53,7 +53,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:image`,
-          content: `../images/Image05.JPG`,
+          content: `../images/Elen-perfil.png`,
         },
         {
           name: `twitter:card`,
