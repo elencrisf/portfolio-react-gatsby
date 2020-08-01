@@ -17,19 +17,20 @@ const Contact = () => {
                         <p className="text-center">{text}</p>
                     </div>
                     <div className="col-md-6 mb-5">
-                        <form>
+                        <form name="contact" method="post" data-netlify="true">
+                            <input type="hidden" name="form-name" value="contact" />
                             <div className="form-group">
                                 {/* <label htmlFor="exampleInputName">Name:</label> */}
-                                <input type="text" className="form-control" id="exampleInputName" placeholder="Name" />
+                                <input name="name" type="text" className="form-control" id="exampleInputName" placeholder="Name" />
                                 {/* <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small> */}
                             </div>
                             <div className="form-group">
                                 {/* <label htmlFor="exampleInputEmail">Email:</label> */}
-                                <input type="email" className="form-control" id="exampleInputEmail" placeholder="E-mail" />
+                                <input name="email" type="email" className="form-control" id="exampleInputEmail" placeholder="E-mail" />
                             </div>
                             <div className="form-group">
                                 {/* <label htmlFor="exampleFormControlTextarea1">Textarea:</label> */}
-                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="TextArea"></textarea>
+                                <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="TextArea"></textarea>
                             </div>
                             <button type="submit" className="btn btn-success">Send</button>
                         </form>
