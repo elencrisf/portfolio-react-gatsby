@@ -30,7 +30,7 @@ const Contact = () => {
                             </div>
                             <div className="form-group">
                                 {/* <label htmlFor="exampleFormControlTextarea1">Textarea:</label> */}
-                                <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="TextArea"></textarea>
+                                <textarea name="message" className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
                             </div>
                             <button type="submit" className="btn btn-success">Send</button>
                         </form>
@@ -39,7 +39,7 @@ const Contact = () => {
                         <ul className="list-group">
                             <li className="list-group-item">
                                 <Styled.EmailWrapper
-                                        danger />elen.cris@uol.com.br</li>
+                                        danger />elen.crisf@uol.com.br</li>
                             <li className="list-group-item">
                                 <Styled.PhoneWrapper danger />1(604)868-7106</li>
                             <li className="list-group-item">

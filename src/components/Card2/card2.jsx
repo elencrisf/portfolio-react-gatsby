@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import * as Styled from './styled';
 import Image from "../Images/image";
+import "./card2.scss";
 
 const Card2 = (props) => {
     return (

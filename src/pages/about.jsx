@@ -5,23 +5,25 @@ import Card2 from "../components/Card2/card2"
 import SEO from "../components/seo"
 
 const About = () => {
-    const text = "Lorem ipsum dolor sit amet consectetur";
+    const text = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab reprehenderit culpa, inventore incidunt quam earum aliquid dolor deleniti necessitatibus soluta quibusdam debitis ut minus sint aut saepe tempora? Eum, quidem.";
 
     return (
         <>
         <Layout>
             <SEO title="About" />
-            <div className="container-fluid px-5">
+            <div className="container px-5">
                 <div className="row">
                     <div className="col-12 py-4">
                         <h1 className="text-center">About</h1>
-                        <p className="text-center">{text}</p>
+                        <h6 className="text-center pt-3">"Art must be an expression of love or it is nothing."</h6>
+                        <p className="text-center">-Marc Chagall</p>
+                        <h6 className="text-center py-3">{text}</h6>
                     </div>
                 </div>
             </div>
 
 
-            <div className="container-fluid px-5">
+            <div className="container px-5">
                 <div className="row">
                     <div className="col-lg-4 mb-3">
                         <Card2

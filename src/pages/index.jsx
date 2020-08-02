@@ -17,7 +17,7 @@ const IndexPage = () => (
       <div className="row">
         <div className="col-12 py-4">
         <h1 className="text-center">I am Elen Ferreira</h1>
-        <p className="text-center">I'm a Web Designer.</p>
+        <h5 className="text-center">I'm a Web Designer.</h5>
         </div>
       </div>
     </div>
