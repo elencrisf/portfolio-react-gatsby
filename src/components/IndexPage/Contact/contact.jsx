@@ -42,11 +42,11 @@ const Contact = () => {
                         <ul className="list-group">
                             <li className="list-group-item bg-gatsby-lightest">
                                 <Styled.EmailWrapper
-                                        gatsby />elen.crisf@uol.com.br</li>
+                                        gatsby /> elen.crisf@uol.com.br</li>
                             <li className="list-group-item bg-gatsby-lightest">
-                                <Styled.PhoneWrapper gatsby />1(604)868-7106</li>
+                                <Styled.PhoneWrapper gatsby /> 1(604)868-7106</li>
                             <li className="list-group-item bg-gatsby-lightest">
-                                <Styled.LocationOnWrapper gatsby />MetroVancouver, BC - Canada </li>
+                                <Styled.LocationOnWrapper gatsby /> MetroVancouver, BC - Canada </li>
                                 {/* <Icons.LocationOn className="w-25 text-danger" />Location</li> */}
                         </ul>
                     </div>

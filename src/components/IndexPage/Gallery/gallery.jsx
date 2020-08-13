@@ -10,6 +10,7 @@ import TextImage from "../../TextImages/textImage";
 const Gallery = (props) => {
 
     const imageTitles = ['image01','image02','image03','image04','image05','image06'];
+    // const imageLink = ['link1', 'link2', 'link3', 'link4', 'link5', 'link6'];
 
     const { gallery } = useStaticQuery(graphql`
         query {
