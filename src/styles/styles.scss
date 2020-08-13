@@ -1,3 +1,8 @@
+.btn-gatsby {
+  // width: 100px;
+  font-size: 18px;
+  box-shadow: 2px 5px 4px #888888;
+}
 
 $theme-colors: ();
 $theme-colors: map-merge(
@@ -6,9 +11,11 @@ $theme-colors: map-merge(
     // "primary":    $primary,
     // "secondary":  $secondary,
     // "success":    green,
-    "gatsby-dark":  #542C85,
+    "gatsby-dark":  rgba(84, 44, 133, 0.9),
+    "gatsby-darkest":  #402264,
     "gatsby":       #9963BA,
     "gatsby-light": #C9ABDB,
+    "gatsby-lightest": #d1bddd,
     "gray-dark":    #272c30,
     "gray":         #c8c8c8,
     // "info":       $info,
@@ -22,3 +29,4 @@ $theme-colors: map-merge(
 
 // @import '~bootstrap/scss/bootstrap.scss';
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// @import './css/font-awesome.css';

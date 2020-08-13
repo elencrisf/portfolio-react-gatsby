@@ -1,0 +1,36 @@
+
+// .contact {
+//     // background: #f0e6d8;
+//     // background: #ffefd5;
+//     // background: #217b96;
+//     // background: #3e91ac;
+//     // background: #1c959b;
+//     background: #88add3;
+// }
+
+.contact{
+    &__title h1 {
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+    &__title p {
+        margin-bottom: 50px;
+        font-size: 25px;
+        color: #402264;
+    }
+    &__button {
+        width: 100px;
+    }
+}
+
+input textarea {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+// @media(max-width:768px) {
+//     .contact {
+//         &__title {
+//             margin-top: -100px;
+//         }
+//     }
+// }

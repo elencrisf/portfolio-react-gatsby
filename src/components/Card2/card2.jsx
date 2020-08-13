@@ -3,8 +3,12 @@ import { Link } from 'gatsby';
 import * as Styled from './styled';
 import Image from "../Images/image";
 import "./card2.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
+
 
 const Card2 = (props) => {
+  
     return (
         <>
             <Styled.Card2Wrapper 
@@ -16,7 +20,7 @@ const Card2 = (props) => {
                 <div className="card-body">
                     <h5 className="card-title">{props.titleCard}</h5>
                     <p className="card-text">{props.textCard}</p>
-                    <Link to="/" className={`btn btn-${props.colorButton}`}>Go somewhere</Link>
+                    <Link to="/" className={`btn btn-${props.colorButton}`}><FontAwesomeIcon icon={faDownload} /> Download Resume</Link>
                     {/* <Dropdown>
                         <Dropdown.Toggle variant="success" id="dropdown-basic">
                             Dropdown Button

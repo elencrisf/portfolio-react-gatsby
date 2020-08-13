@@ -1,0 +1,66 @@
+// .about {
+//     text-align: center;
+//     color: #fff;
+//     background-image: url("../../../images/circuito.png");
+//     background-color: rgb(69, 94, 94);
+//     background-repeat: repeat;
+//     background-position: center;
+//     background-attachment: fixed;
+//     background-size: 90%;
+//     opacity: 0.75;
+// }
+
+.aboutImage {
+    background: url("../../../images/Elen-perfil.png") no-repeat center center fixed;
+    background-color: rgb(139, 14, 255);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 980px;
+    opacity: 0.2;
+}
+
+.about {
+    margin-top: -980px;
+    width: 100%;
+    &__title h1 {
+        margin-top: 50px;
+    }
+    &__title h6 {
+        font-size: 25px;
+        color: rgb(82, 5, 145);
+    }
+    &__title p {
+        font-size: 17px;
+    }
+    &__card {
+        margin-bottom: 52px;
+    }
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media(max-width:768px) {
+    .aboutImage {
+        margin-top: -623px;
+        height: 1782px;
+    }
+}
+
+@media(max-width:768px) {
+    .about {
+        // margin-top: -1920px;
+        &__title {
+            margin-top:  -1792px;
+        }
+        // &__card {
+        //     // margin-top: -500px;
+        // }
+    }
+}
+
+

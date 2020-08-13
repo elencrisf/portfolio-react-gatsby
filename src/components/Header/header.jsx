@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
+import "./header.scss";
 // import Navbar from "react-bootstrap/Navbar"
 // import Nav from "react-bootstrap/Nav"
 
@@ -12,7 +13,7 @@ const Header = () => {
     query {
       logo: file(relativePath: { eq: "Elen-perfil.png" }) {
         childImageSharp {
-          fixed(width: 40, height: 40) {
+          fixed(width: 45, height: 45) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -21,8 +22,8 @@ const Header = () => {
   `)
 
   return (
-    <>
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+    <header className="headerNav">
+      <nav className="navbar fixed-top navbar-expand-sm navbar-dark bg-gatsby-dark">
         <Link className="navbar-brand"to="/">
           <Img fixed={logo.childImageSharp.fixed} alt="Logo"/>
         </Link>
@@ -31,27 +32,27 @@ const Header = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mr-auto">
+          <ul className="navbar-nav mx-auto mt-2 mt-lg-0">
               <li className="nav-item">
-              <Link to="/" activeStyle={{ color: "#9963BA" }} className="nav-link" activeClassName="active"
-            >Home</Link>
+              <Link to="/" activeStyle={{ color: "#C9ABDB" }} className="nav-link" activeClassName="active"
+            >HOME</Link>
               </li>
               <li className="nav-item">
-              <Link to="/about/" activeStyle={{ color: "#9963BA" }} className="nav-link" activeClassName="active"
-            >About</Link>
+              <Link to="/about/" activeStyle={{ color: "#C9ABDB" }} className="nav-link" activeClassName="active"
+            >ABOUT</Link>
               </li>
               <li className="nav-item">
-              <Link to="/gallery/" activeStyle={{ color: "#9963BA" }} className="nav-link" activeClassName="active"
-            >Projects</Link>
+              <Link to="/gallery/" activeStyle={{ color: "#C9ABDB" }} className="nav-link" activeClassName="active"
+            >PROJECTS</Link>
               </li>
               <li className="nav-item">
-              <Link to="/contact/" activeStyle={{ color: "#9963BA" }} className="nav-link" activeClassName="active"
-            >Contact</Link>
+              <Link to="/contact/" activeStyle={{ color: "#C9ABDB" }} className="nav-link" activeClassName="active"
+            >CONTACT</Link>
               </li>
           </ul>
         </div>
       </nav>
-    </>
+    </header>
   );
 };
 

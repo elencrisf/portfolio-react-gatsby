@@ -1,15 +1,14 @@
 import styled, { css } from "styled-components";
 import Icons from "../../components/Icons/icons";
 
-
 export const EmailWrapper = styled(Icons.Email) `
     color: ${ props => props.color ? props.color : "red" };
     width: ${ props => props.width ? props.width : "100px" };
 
     ${props =>
-        props.danger &&
+        props.gatsby &&
         css`
-            color: orange;
+            color: #402264;
             width: 35px;
         `
     };
@@ -19,9 +18,9 @@ export const PhoneWrapper = styled(Icons.Phone) `
     width: ${ props => props.width ? props.width : "100px" };
 
     ${props =>
-        props.danger &&
+        props.gatsby &&
         css`
-            color: orange;
+            color: #402264;
             width: 35px;
         `
     };
@@ -31,9 +30,9 @@ export const LocationOnWrapper = styled(Icons.LocationOn) `
     width: ${ props => props.width ? props.width : "100px" };
 
     ${props =>
-        props.danger &&
+        props.gatsby &&
         css`
-            color: orange;
+            color: #402264;
             width: 35px;
         `
     };

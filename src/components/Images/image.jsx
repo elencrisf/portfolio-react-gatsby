@@ -7,21 +7,21 @@ const Image = (props) => {
 
     const { image01, image02, image03 } = useStaticQuery(graphql`
     query {
-      image01: file(relativePath: { eq: "Image01.JPG" }) {
+      image01: file(relativePath: { eq: "circuito.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200, maxHeight: 800) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
-      image02: file(relativePath: { eq: "Image02.JPG" }) {
+      image02: file(relativePath: { eq: "Elen-About2.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1200, maxHeight: 800) {
+          fluid(maxWidth: 800, maxHeight: 1100) {
             ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
-      image03: file(relativePath: { eq: "Image05.JPG" }) {
+      image03: file(relativePath: { eq: "Elen-perfil4.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200, maxHeight: 800) {
             ...GatsbyImageSharpFluid_tracedSVG

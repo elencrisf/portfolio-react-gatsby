@@ -3,11 +3,11 @@ import styled, { css } from 'styled-components'
 export const Card2Wrapper = styled.div`
     background: ${ props => props.background ? props.background : "#e3a617" };
     h5 {
-        color: #fff2a8;
+        color: rgb(82, 5, 145);
     }
 
     p {
-        color: #fff2a8;
+        color: rgb(82, 5, 145);
     }
 
     ${props =>

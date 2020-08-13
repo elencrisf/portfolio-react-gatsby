@@ -47,7 +47,7 @@ const TextImage = (props) => {
                     <h3>Hello Word 3</h3>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     {/* <a href="https://elencrisf.github.io/lyrics-songs">Twitter</a> */}
-                    <p>Look this <a href="https://elencrisf.github.io/lyrics-songs">Project</a>!</p>
+                    {/* <p>Look this <a href="https://elencrisf.github.io/lyrics-songs">Project</a>!</p> */}
                   </div>
                 case 'image04':
                   return <div>
