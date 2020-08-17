@@ -1,11 +1,16 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import * as Styled from './styled';
 import Image from "../Images/image";
 import "./card3.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
+// import Img from "gatsby-image"
 
+// import File from "../files/Resume-Elen.pdf"
+
+const url = "../files/Resume-Elen.pdf";
+console.log(url);
 
 const Card3 = (props) => {
   
@@ -25,9 +30,11 @@ const Card3 = (props) => {
                                 <p key={index} className="card3_text card-text text-center">{paragraph}</p>
                             ))}
                             <div className="card3__button mt-5">
-                            <Link to="/" className={`btn btn-${props.colorButton}`}>
-                                <FontAwesomeIcon icon={faDownload} /> Download Resume
-                                </Link>
+                            <a href={url} target="_blank" rel="noopper noreferrer" download="Resume-Elen.pdf" className={`btn btn-${props.colorButton}`}>
+                              <FontAwesomeIcon icon={faDownload} />Download Resume
+                                {/* <File src={File} alt="text" />Download Resume */}
+                                {/* < src={Pdf} type="application/pdf" width="100%" heigth="600px" />Download Resume */}
+                                </a>
                             </div>
                         </div>
                     </div>

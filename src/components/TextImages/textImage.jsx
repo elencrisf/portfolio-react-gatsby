@@ -34,35 +34,33 @@ const TextImage = (props) => {
             switch (props.name) {
                 case 'image01':
                   return <div>
-                    <h3>Hello Word 1</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>Weather App</h3>
+                    <p> I used React, with Context and Openweather API in this project.</p>
                   </div>
                 case 'image02':
                   return <div>
-                    <h3>Hello Word 2</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>Form Ecommerce</h3>
+                    <p> This project I used html and CSS and formspree form.</p>
                   </div>
                 case 'image03':
                   return <div>
-                    <h3>Hello Word 3</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    {/* <a href="https://elencrisf.github.io/lyrics-songs">Twitter</a> */}
-                    {/* <p>Look this <a href="https://elencrisf.github.io/lyrics-songs">Project</a>!</p> */}
+                    <h3>Lyrics and Deezer API</h3>
+                    <p> I did this project with html and fetched two API about lyrics and short MP3 songs in Deezer App.</p>
                   </div>
                 case 'image04':
                   return <div>
-                    <h3>Hello Word 4</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>Tasks Manager Project</h3>
+                    <p> Done with React, I used Hook and Redux for creating tasks diary.</p>
                   </div>
                 case 'image05':
                   return <div>
-                    <h3>Hello Word 5</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>Landing Page client Riipen</h3>
+                    <p> Done with React and Gatsby. I did the section About Larry Linton.</p>
                   </div>
                 case 'image06':
                   return <div>
-                    <h3>Hello Word 6</h3>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>Website Impactraction</h3>
+                    <p> We used React and Gatsby. I did the Success Stories page. We linked with a Contentful Headless data.</p>
                   </div>
                 default:
                   return null;

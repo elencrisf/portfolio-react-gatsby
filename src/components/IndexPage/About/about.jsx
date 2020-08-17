@@ -17,7 +17,9 @@ const About = () => {
         <>
         {/* <Layout> */}
             {/* <SEO title="About" /> */}
-        <div className="aboutImage container-fluid">
+        <div className="aboutImage" id="about">
+        <div className="container-fluid">
+        </div>
         </div>
         <div className="about">
             <div className="container px-5">

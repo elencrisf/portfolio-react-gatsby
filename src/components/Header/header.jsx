@@ -38,15 +38,15 @@ const Header = () => {
             >HOME</Link>
               </li>
               <li className="nav-item">
-              <Link to="/about/" activeStyle={{ color: "#C9ABDB" }} className="nav-link" activeClassName="active"
+              <Link to="#about" activeStyle={{ color: "#C9ABDB" }} className="nav-link" activeClassName="active"
             >ABOUT</Link>
               </li>
               <li className="nav-item">
-              <Link to="/gallery/" activeStyle={{ color: "#C9ABDB" }} className="nav-link" activeClassName="active"
+              <Link to="#gallery" activeStyle={{ color: "#C9ABDB" }} className="nav-link" activeClassName="active"
             >PROJECTS</Link>
               </li>
               <li className="nav-item">
-              <Link to="/contact/" activeStyle={{ color: "#C9ABDB" }} className="nav-link" activeClassName="active"
+              <Link to="#contact" activeStyle={{ color: "#C9ABDB" }} className="nav-link" activeClassName="active"
             >CONTACT</Link>
               </li>
           </ul>

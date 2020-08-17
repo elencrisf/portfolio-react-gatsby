@@ -12,7 +12,7 @@ const Contact = () => {
         <>
         {/* <Layout> */}
         {/* <SEO title="Contact" /> */}
-        <div className="contact container-fluid bg-gatsby-lightest">
+        <div className="contact container-fluid bg-gatsby-lightest" id="contact">
             <div className="container pb-5">
                 <div className="row">
                     <div className="contact__title col-12">

@@ -6,11 +6,19 @@ import Img from 'gatsby-image';
 import "./gallery.scss";
 import cardStyles from "../../Card/card.module.scss";
 import TextImage from "../../TextImages/textImage";
+// import LinkImage from "../../LinkImages/linkImage";
 
 const Gallery = (props) => {
 
     const imageTitles = ['image01','image02','image03','image04','image05','image06'];
-    // const imageLink = ['link1', 'link2', 'link3', 'link4', 'link5', 'link6'];
+    const imageLinks = [
+        'https://elencrisf.github.io/weather-react-new/', 
+        'https://elencrisf.github.io/form-ecommerce/', 
+        'https://elencrisf.github.io/lyrics-songs', 
+        'https://elencrisf.github.io/project-overview-react/', 
+        'https://larrysbook.vercel.app/', 
+        'https://impactraction-v1.netlify.app/successStories'
+    ];
 
     const { gallery } = useStaticQuery(graphql`
         query {
@@ -32,7 +40,7 @@ const Gallery = (props) => {
         <>
         {/* <Layout> */}
             {/* <SEO title="Gallery" /> */}
-            <div className="gallery">
+            <div className="gallery" id="gallery">
             <div className="container-fluid py-5 px-5">
                 <div className="gallery__title">
                     <div className="row">
@@ -45,7 +53,7 @@ const Gallery = (props) => {
                     <div className="row">
                             {gallery.nodes.map((image, indexNumber) => (
                                 <div className="col-lg-4 col-md-4 col-sm-6 mb-4" key={image.id}>
-                                    <a href="http://www.google.com.br">
+                                    <a href={imageLinks[indexNumber]}>
                                     <div className={cardStyles.cardContainer}>
                                         <Img className={cardStyles.image} fluid={image.childImageSharp.fluid} alt="Gallery" />  
                                         <div className={cardStyles.overlay}>
