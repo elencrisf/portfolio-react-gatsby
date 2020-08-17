@@ -34,7 +34,7 @@ const Card3 = (props) => {
                               <FontAwesomeIcon icon={faDownload} />Download Resume
                                 {/* <File src={File} alt="text" />Download Resume */}
                                 {/* < src={Pdf} type="application/pdf" width="100%" heigth="600px" />Download Resume */}
-                                </a>
+                            </a>
                             </div>
                         </div>
                     </div>
