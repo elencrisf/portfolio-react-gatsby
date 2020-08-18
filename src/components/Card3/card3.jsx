@@ -1,8 +1,9 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 import * as Styled from './styled';
 import Image from "../Images/image";
 import "./card3.scss";
+import downloadFile from '../downloads/resume.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
@@ -25,9 +26,9 @@ const Card3 = (props) => {
                                 <p key={index} className="card3_text card-text text-center">{paragraph}</p>
                             ))}
                             <div className="card3__button mt-5">
-                            <Link to="/" className={`btn btn-${props.colorButton}`}>
+                                <a href={downloadFile} download className={`btn btn-${props.colorButton}`}>
                                 <FontAwesomeIcon icon={faDownload} /> Download Resume
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     </div>

@@ -36,12 +36,28 @@ p {
 
 @media(max-width:768px) {
     .aboutImage {
+        margin-top: 0;
+        height: 1260px;
+    }
+}
+
+@media(max-width:768px) {
+    .about {
+        &__title {
+            margin-top:  -1264px;
+        }
+    }
+}
+
+
+@media(max-width:635px) {
+    .aboutImage {
         margin-top: -628px;
         height: 1782px;
     }
 }
 
-@media(max-width:768px) {
+@media(max-width:635px) {
     .about {
         &__title {
             margin-top:  -1792px;
@@ -51,7 +67,7 @@ p {
 
 @media(max-width:375px) {
     .aboutImage {
-        margin-top: -585px;
+        margin-top: -623px;
         // margin-bottom: 10px;
         height: 1860px;
     }

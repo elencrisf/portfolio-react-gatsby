@@ -8,3 +8,12 @@
 .navbar-nav .nav-item .nav-link {
     color: white;
 }
+
+@media(min-width:768px) {
+    .navbar-nav .nav-item {
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: 700;
+        width: 180px;
+    }
+}

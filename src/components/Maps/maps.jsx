@@ -26,7 +26,7 @@ const defaultProps = {
 const AnyReactComponent = ({ text }) => <div>{text}</div>
 
 const GoogleMap = () => (
-  <div className="mx-auto" style={{ height: '50vh', width: '60%' }}>
+  <div className="mx-auto" style={{ height: '50vh', width: '70%' }}>
     <GoogleMapReact
       // bootstrapURLKeys={{ key: 'process.env.GOOGLE_MAPS_STATIC_API_KEY' }}
       bootstrapURLKeys={{ key: process.env.GATSBY_GOOGLE_MAPS_STATIC_API_KEY }}
