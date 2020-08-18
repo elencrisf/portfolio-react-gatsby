@@ -52,7 +52,7 @@ p {
 
 @media(max-width:635px) {
     .aboutImage {
-        margin-top: -628px;
+        margin-top: -583px;
         height: 1782px;
     }
 }
@@ -67,7 +67,7 @@ p {
 
 @media(max-width:375px) {
     .aboutImage {
-        margin-top: -623px;
+        margin-top: -538px;
         // margin-bottom: 10px;
         height: 1860px;
     }
@@ -83,16 +83,16 @@ p {
 
 @media(max-width:320px) {
     .aboutImage {
-        margin-top: -574px;
+        margin-top: -488px;
         // margin-bottom: 10px;
-        height: 2162px;
+        height: 2139px;
     }
 }
 
 @media(max-width:320px) {
     .about {
         &__title {
-            margin-top:  -2182px;
+            margin-top:  -2159px;
         }
     }
 }

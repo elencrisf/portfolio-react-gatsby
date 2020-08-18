@@ -40,7 +40,8 @@ const Profile = () => (
                     <img className="img-responsive" src={ImgProfile} alt="" /> 
                     <div className="title text-center">
                       <h1>I am Elen Ferreira</h1>
-                      <h5>I'm a Web Designer.</h5>
+                      <h5 className="text a">I'm a Web Designer.</h5>
+                      <h5 className="text b">I'm a Web Developer.</h5>
                     </div>
                   </div>
                 </div>

@@ -19,6 +19,32 @@
     }
   }
 
+  .text {
+    // font-size: 3rem;
+    // font-weight: bold;
+    position: absolute;
+    margin-left: 35%;
+    opacity: 0;
+    animation: fader 6s infinite;
+}
+/* cada texto tem um delay de 5 + o valor do delay anterior, meno o primeiro */
+.a {
+    animation-delay: 0s;    
+}
+.b {
+    animation-delay: 3s;
+}
+
+/* Animação acontece apenas entre 0 e 20%, pois são 5 elementos */
+@keyframes fader {
+    10% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
 .img-responsive {
     width: 40%;
     background-color: white;
@@ -33,7 +59,7 @@
     .title {
         text-align: center;
         margin-top: -160px;
-        margin-left: 50px;
+        margin-left: 25%;
         padding: 10px;
         text-shadow: 2px 2px #000;
         color: #FFF;
@@ -43,6 +69,10 @@
         & h1 {
             font-size: 3rem;
         }
+    }
+
+    .text {
+        margin-left: 12%;
     }
 }
 
@@ -61,6 +91,25 @@
     
         .title {
             margin-top: 0;
+        }
+        .title h1 {
+            margin-left: -80px;
+        }
+
+        .text {
+            margin-left: -10px;
+        }
+    }
+
+    @media(max-width:375px) {
+        .text {
+            margin-left: -50px;
+        }
+    }
+
+    @media(max-width:320px) {
+        .text {
+            margin-left: -50px;
         }
     }
 
