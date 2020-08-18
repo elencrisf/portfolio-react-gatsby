@@ -9,6 +9,18 @@ const defaultProps = {
   zoom: 11,
 }
 
+// query StaticMapQuery {
+//   staticMap {
+//       childFile {
+//           childImageSharp {
+//               fluid {
+//                   # or fixed
+//                   ...GatsbyImageSharpFluid
+//               }
+//           }
+//       }
+//   }
+// }
 console.log(process.env.GATSBY_GOOGLE_MAPS_STATIC_API_KEY)
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>
@@ -16,8 +28,8 @@ const AnyReactComponent = ({ text }) => <div>{text}</div>
 const GoogleMap = () => (
   <div className="mx-auto" style={{ height: '50vh', width: '60%' }}>
     <GoogleMapReact
-      // bootstrapURLKeys={{ key: 'AlzaSyBRKoTpCZsUXfcXyxHxoK-PpXMHYwfqs8o' }}
-      bootstrapURLKeys={{ key: process.env.GATSBY_GOOGLE_MAPS_STATIC_API_KEY }}
+      // bootstrapURLKeys={{ key: 'process.env.GOOGLE_MAPS_STATIC_API_KEY' }}
+      bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_STATIC_API_KEY }}
       defaultCenter={defaultProps.center}
       defaultZoom={defaultProps.zoom}
     >
@@ -33,39 +45,3 @@ const GoogleMap = () => (
 export default GoogleMap
 
 
-
-
-// import React from 'react';
-// // import { Link } from 'gatsby';
-// import { useStaticQuery, graphql } from "gatsby";
-// import Img from "gatsby-image";
-
-
-// const Maps = (props) => {
-
-//     const { maps } = useStaticQuery(graphql`
-//     query StaticMapQuery {
-//         maps: staticMap {
-//             childFile {
-//                 childImageSharp {
-//                     fluid(maxWidth: 1200, maxHeight: 800) {
-//                         ...GatsbyImageSharpFluid
-//                     }
-//                 }
-//             }
-//         }
-//     }
-//   `)
-
-//     return (
-//         <>
-//         <div>
-//             <a href="https://www.google.com/maps">
-//             <Img fluid={maps.childImageSharp.fluid} alt="GoogleMaps"/>
-//             </a>
-//         </div>
-//         </>
-//     );
-// };
-
-// export default Maps;

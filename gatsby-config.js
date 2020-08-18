@@ -42,6 +42,17 @@ module.exports = {
       },
     },
     // {
+    //   resolve: "@ccalamos/gatsby-source-googlemaps-static",
+    //   options: {
+    //       key: process.env.GOOGLE_MAPS_STATIC_API_KEY,
+    //       center: { 
+    //         lat: 49.25,
+    //         lng: -123.12,
+    //       },
+    //       zoom: 11,
+    //   },
+    // },
+    // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {
     //     name: `images`,
@@ -57,13 +68,6 @@ module.exports = {
     //     ],
       //   // optional: will only get page 1, so increase this count to include > 10 photos
       //   perPage: `100`
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-source-googlemaps-static`,
-    //   options: {
-    //       key: `process.env.GOOGLE_MAPS_STATIC_API_KEY`,
-    //       center: `Surrey, BC`,
     //   },
     // },
     `gatsby-transformer-sharp`,
