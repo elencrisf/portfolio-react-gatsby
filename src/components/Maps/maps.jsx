@@ -21,7 +21,7 @@ const defaultProps = {
 //       }
 //   }
 // }
-console.log(process.env.GATSBY_GOOGLE_MAPS_STATIC_API_KEY)
+// console.log(process.env.GATSBY_GOOGLE_MAPS_STATIC_API_KEY)
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>
 
@@ -29,7 +29,7 @@ const GoogleMap = () => (
   <div className="mx-auto" style={{ height: '50vh', width: '60%' }}>
     <GoogleMapReact
       // bootstrapURLKeys={{ key: 'process.env.GOOGLE_MAPS_STATIC_API_KEY' }}
-      bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_STATIC_API_KEY }}
+      bootstrapURLKeys={{ key: process.env.GATSBY_GOOGLE_MAPS_STATIC_API_KEY }}
       defaultCenter={defaultProps.center}
       defaultZoom={defaultProps.zoom}
     >
