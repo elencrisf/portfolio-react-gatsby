@@ -58,7 +58,7 @@ const Gallery = (props) => {
                                         <Img className={cardStyles.image} fluid={image.childImageSharp.fluid} alt="Gallery" />  
                                         <div className={cardStyles.overlay}>
                                             <div className={cardStyles.text}>
-                                                <div className="text">
+                                                <div className="textGallery">
                                                     <TextImage name={imageTitles[indexNumber]} />
                                                 </div>
                                             </div>

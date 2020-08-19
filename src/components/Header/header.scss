@@ -9,7 +9,7 @@
     color: white;
 }
 
-@media(min-width:768px) {
+@media(min-width:768px) and (max-width:1024px) {
     .navbar-nav .nav-item {
         letter-spacing: 1px;
         font-size: 20px;

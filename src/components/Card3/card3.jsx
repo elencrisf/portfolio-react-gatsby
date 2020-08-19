@@ -26,7 +26,7 @@ const Card3 = (props) => {
                                 <p key={index} className="card3_text card-text text-center">{paragraph}</p>
                             ))}
                             <div className="card3__button mt-5">
-                                <a href={downloadFile} download className={`btn btn-${props.colorButton}`}>
+                                <a href={downloadFile} download="resume-elen.pdf" className={`btn btn-${props.colorButton}`}>
                                 <FontAwesomeIcon icon={faDownload} /> Download Resume
                                 </a>
                             </div>
