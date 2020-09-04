@@ -101,6 +101,12 @@
         }
     }
 
+    @media(max-width:400px) {
+        .text {
+            margin-left: -50px;
+        }
+    }
+
     @media(max-width:375px) {
         .text {
             margin-left: -50px;

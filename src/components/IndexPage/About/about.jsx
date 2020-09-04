@@ -8,7 +8,7 @@ import "./about.scss";
 const About = () => {
     // const text = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab reprehenderit culpa, inventore incidunt quam earum aliquid dolor deleniti necessitatibus soluta quibusdam debitis ut minus sint aut saepe tempora? Eum, quidem.";
     const text = [
-        "I am an Engineer Technology and Web Development student and constantly looking for improving my skills and knowledge. I like to be connected with news in the technologies world. I learn and help others as well I can do that and always I do my best in the work.",
+        "I am an Engineer Technology and Web Developer, constantly looking for improving my skills and knowledge. I like to be connected with news in the technologies world. I learn and help others as well I can do that and always I do my best in the work.",
         " I worked with traffic system management. I also have experience with map data manipulation for traffic engineering in geoprocessing, improving management and process, I helped in many tools and specifics technologies for traffic engineering. Despite not programming during that time I had the opportunity to learn more about new technologies, project management, customer success, responsibilities with meetings' management.",
         " When I'm not working or studying I love to take pictures and walk in the parks with my family."
     ];

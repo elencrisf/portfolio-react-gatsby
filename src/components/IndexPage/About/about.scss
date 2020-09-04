@@ -65,6 +65,22 @@ p {
     }
 }
 
+@media(max-width:400px) {
+    .aboutImage {
+        margin-top: -559px;
+        // margin-bottom: 10px;
+        height: 1860px;
+    }
+}
+
+@media(max-width:400px) {
+    .about {
+        &__title {
+            margin-top:  -1885px;
+        }
+    }
+}
+
 @media(max-width:375px) {
     .aboutImage {
         margin-top: -538px;

@@ -15,6 +15,16 @@
     }
 }
 
+@media(max-width:375px) {
+    .gallery {
+        margin-top: -8px;
+        &__title {
+            margin-top: 10px;
+            // margin-bottom: 25px;
+        }
+    }
+}
+
 @media(max-width:768px) {
     .textGallery h1 {
     font-size: 20px;
@@ -24,12 +34,11 @@
     }
 }
 
-@media(max-width:375px) {
-    .gallery {
-        margin-top: -8px;
-        &__title {
-            margin-top: 10px;
-            // margin-bottom: 25px;
-        }
+@media(max-width:400px) {
+    .textGallery h1 {
+    font-size: 18px;
+    }
+    .textGallery p {
+        font-size: 15px;
     }
 }

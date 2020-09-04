@@ -26,6 +26,15 @@
         }
     }
 }
+
+@media(max-width:400px) {
+    .card3 {
+        &__button {
+            margin-left: 15%;
+        }
+    }
+}
+
 @media(max-width:375px) {
     .card3 {
         &__button {
