@@ -34,6 +34,21 @@ p {
     font-weight: 400;
 }
 
+@media(max-width:1024px) {
+    .aboutImage {
+        margin-top: 0;
+        height: 1080px;
+    }
+}
+
+@media(max-width:1024px) {
+    .about {
+        &__title {
+            margin-top:  -1080px;
+        }
+    }
+}
+
 @media(max-width:768px) {
     .aboutImage {
         margin-top: 0;
@@ -67,7 +82,7 @@ p {
 
 @media(max-width:400px) {
     .aboutImage {
-        margin-top: -559px;
+        margin-top: -539px;
         // margin-bottom: 10px;
         height: 1860px;
     }
@@ -76,7 +91,7 @@ p {
 @media(max-width:400px) {
     .about {
         &__title {
-            margin-top:  -1885px;
+            margin-top:  -1905px;
         }
     }
 }
@@ -101,14 +116,14 @@ p {
     .aboutImage {
         margin-top: -488px;
         // margin-bottom: 10px;
-        height: 2139px;
+        height: 2119px;
     }
 }
 
 @media(max-width:320px) {
     .about {
         &__title {
-            margin-top:  -2159px;
+            margin-top:  -2134px;
         }
     }
 }
